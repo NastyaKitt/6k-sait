@@ -1,0 +1,298 @@
+html {
+    font-size: 16px;
+    font-family: "Ubuntu", serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerLogo {
+    width: 31rem;
+}
+.centerLogo1 {
+    font-size: 1rem;
+    font-family: "Ubuntu";
+    text-decoration: none;
+    padding: 0 1rem;
+    font-weight: 600;
+    color: #000;
+}
+.rightLogo {
+    width: 31rem;
+    display: flex;
+    justify-content: center;
+}
+.rightLogo p{
+    padding:0 2rem 0 0 ;
+}
+.button1 {
+    width: 12.5rem;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    font-family: "Ubuntu";
+    font-weight: 600;
+}
+.firstWin {
+    width: 100%;
+    height: 47rem;
+    display: grid;
+    justify-content: center;
+}
+.firstWin1 {
+    height: 100%;
+    width: 72.5rem;
+    display: flex;
+}
+.firstWin1Left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.firstWin1LeftUp {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.firstWin1LeftUp b{
+    color: #3767b8;
+}
+.firstWin1LeftDown {
+    width: 100%;
+}
+.firstWin1LeftDown p{
+    font-size: 1.2rem;
+}
+.firstWin1LeftDown button{
+    width: 19rem;
+    height: 5.5rem;
+    background-color: #3767b8;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 10px #3767b8;
+}
+.icon {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.iconi {
+    display: flex;
+    align-items: center;
+}
+.iconi2 {
+    font-size: 1rem;
+}
+.firstWin1Right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+    background-image: url(img/_-min.png);
+    background-position-x: center;
+    background-position-y: top;
+}
+.firstWin1RightP {
+    width: 30rem;
+    height: 5rem;
+    background-color: #3767b8;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+    position: relative;
+    top: 4rem;
+}
+.kupon {
+    width: 100%;
+    height: 15rem;
+    display: grid;
+    justify-content: center;
+    background-color: #fff;
+}
+.kupon1 {
+    width: 72.5rem;
+    box-shadow: 0px 10px 20px 5px rgba(66,66,66,0.1);
+    background-color: #fff;
+}
+.doubleLine {
+    height: calc(100% - 2rem);
+    margin: 1rem;
+    border-width: 5px;
+    border-color: #3766b850;
+    border-style: dashed;
+}
+.form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.politic{
+    font-size: 12px;
+}
+.politic a{
+    color: #3767b8;
+}
+.formp {
+    font-size: 1.5rem;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+.postp, .postpp {
+    height: 3rem;
+    width: 15rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+.postpp {
+    width: 25rem;
+    height: 3rem;
+    background-color: #3767b8;
+    color: #fff;
+    border: none;
+}
+.newLife {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    background-color: #fff;
+}
+.newLife1 {
+    width: 72.5rem;
+    height: 45rem;
+    display: flex;
+}
+.newLifeText {
+    height: 40rem;
+    width: calc(100% - 3rem);
+    padding-right: 3rem;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nlt1 {
+    font-size: 3rem;
+}
+.nlt1 b{
+    color: #3767b8;
+}
+.nlt2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.nlt3 {
+    font-size: 1.7rem;
+    color: #3767b8;
+}
+.nlt4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.nltBlue {
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    background-image: url(img/__.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.newLifeImg{
+    height: 30rem;
+    margin-top: 2rem;
+}
+.newLifeImgg{
+    box-shadow: 0px 0px 30px 0px rgba(66,66,66,0.7);
+}
+.forma {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    background-color: #fff;
+}
+.formao {
+    width: 72.5rem;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+.frm {
+    width: 30rem;
+    height: 5rem;
+    background-color: #3767b8;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.spishemDolg {
+    width: 100%;
+    height: 29rem;
+    display: grid;
+    justify-content: center;
+}
+.spishemDolg11 {
+    width: 72.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.spishemDolg1 {
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.spishemDolg1 p{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.spishemDolg1 b{
+    color: #3767b8;
+}
+.spishemDolg2 {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.spishemDolgItem {
+    width: 17rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.spishemDolgItem p{
+    font-size: 1rem;
+    width: 70%;
+}
