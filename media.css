@@ -1,0 +1,10 @@
+@media screen and ( min-width: 1450px ) and (max-width: 1920px) {
+    div.blue-setka {
+        left: 47rem;
+    }
+}
+@media screen and ( min-width: 1000px ) and (max-width: 1449px) {
+    div.blue-setka {
+        left: 30rem;
+    }
+}

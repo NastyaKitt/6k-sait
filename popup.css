@@ -1,0 +1,94 @@
+.popupW {
+    position: relative;
+}
+.popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #0000008a;
+    z-index: 9998;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+.popup.open {
+    visibility: visible;
+    opacity: 1;
+}
+.popup1 {
+    width: 35rem;
+    height: 37rem;
+    background-color: #fff;
+    box-shadow: 3px 5px 15px #333;
+    transform: scale(0);
+    transition: transform .8s;
+
+}
+.popup.open .popup1{
+    transform: scale(1);
+}
+.popup11 {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    padding: 2rem;
+}
+.popup111 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.popup111 h1 p{
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0;
+}
+.popup1111 h1{
+    margin: 0;
+}
+.formw {
+    width: calc(100% - 1rem - 4px);
+    padding: 0;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+.formw2 {
+    width: calc(100% - 1rem - 4px);
+    height: 3rem;
+    padding: 0;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+.formw3 {
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.formw1 {
+    width: 100%;
+    height: 3rem;
+    padding: 0;
+    padding-left: 1rem;
+    background-color: #3767b8;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    font-weight: 600;
+}
+.my-modal-closed {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0rem;
+}
+.my-modal-closed path{
+    transition: fill .4s;
+}
+.my-modal-closed:hover path{
+    fill: #3767b8;
+}

@@ -1,12 +1,34 @@
+
 html {
     font-size: 16px;
     font-family: "Ubuntu", serif;
-    letter-spacing: 3px;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+}
+.setka {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
+.setka1 {
+    position: absolute;
+    transform: rotate(315deg);
+    left: -20rem;
+    bottom: -40rem;
+}
+.blue-setka {
+    width: auto;
+    height: auto;
+    z-index: 0;
+    position: relative;
+    left: 47em;
+    transform: rotate(295deg);
 }
 .header {
     height: 80px;
@@ -14,6 +36,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 40;
+}
+.header900 {
+    display: none;
 }
 
 .centerLogo {
@@ -45,8 +72,10 @@ body {
 }
 .firstWin {
     width: 100%;
-    height: 47rem;
+    height: 55rem;
     display: grid;
+    z-index: 50;
+    position: relative;
     justify-content: center;
 }
 .firstWin1 {
@@ -56,18 +85,27 @@ body {
 }
 .firstWin1Left {
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+.pfirs {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
 }
 .firstWin1LeftUp {
     font-size: 2rem;
     font-weight: 600;
     line-height: 3rem;
 }
+.firstWin1LeftUp p{
+    margin-bottom: 0;
+
+}
 .firstWin1LeftUp b{
-    color: #3767b8;
+    color: #3767b8;;
 }
 .firstWin1LeftDown {
     width: 100%;
@@ -83,6 +121,11 @@ body {
     color: #fff;
     font-size: 1.2rem;
     box-shadow: 0 3px 10px #3767b8;
+    margin-bottom: 2rem;
+}
+.firstWin1LeftDown button:hover {
+    background-color: #2756a8;
+    cursor: pointer;
 }
 .icon {
     width: auto;
@@ -95,15 +138,18 @@ body {
 }
 .iconi2 {
     font-size: 1rem;
+    z-index: 30;
 }
 .firstWin1Right {
     width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;    
     background-image: url(img/min.png);
     background-position-x: center;
+    z-index: 21;
     background-position-y: top;
 }
 .firstWin1RightP {
@@ -127,7 +173,10 @@ body {
     height: 15rem;
     display: grid;
     justify-content: center;
-    background-color: #fff;
+    z-index: 60;
+    position: relative;
+    bottom: 7rem;
+    background-color: transparent;
 }
 .kupon1 {
     width: 72.5rem;
@@ -173,16 +222,31 @@ body {
     color: #fff;
     border: none;
 }
+.postpp:hover {
+    background-color: #2756a8;
+    cursor: pointer;
+}
 .newLife {
     width: 100%;
     display: grid;
     justify-content: center;
-    background-color: #fff;
+    z-index: 21;
+    background-color: #f5f5f5;
+}
+.newLife900 {
+    display: none;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    z-index: 21;
+    background-color: #f5f5f5;
+
 }
 .newLife1 {
     width: 72.5rem;
     height: 45rem;
     display: flex;
+    z-index: 31;
 }
 .newLifeText {
     height: 40rem;
@@ -237,7 +301,7 @@ body {
     width: 100%;
     display: grid;
     justify-items: center;
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 .formao {
     width: 72.5rem;
@@ -252,13 +316,21 @@ body {
     border: none;
     color: #fff;
     font-weight: 400;
+    margin-bottom: 5rem;
     font-size: 1.1rem;
+    transition: background-color .2s;
+
+}
+.frm:hover {
+    background-color: #2756a8;
+    cursor: pointer;
 }
 .spishemDolg {
     width: 100%;
     height: 29rem;
     display: grid;
     justify-content: center;
+    background-color: #fff;
 }
 .spishemDolg11 {
     width: 72.5rem;
@@ -358,9 +430,14 @@ body {
     background-color: #fff;
     border: none;
 }
+.nechaev23 button:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color .2s;
+}
 .result {
     width: 100%;
-    height: 75rem;
+    height: 65rem;
     display: grid;
     justify-items: center;
 }
@@ -392,14 +469,25 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 .cubb, .cub {
-    width: calc(95% - 4rem);
-    height: calc(60% - 4rem);
+    width: calc(95% );
+    height: calc(50% );
     background-color: #3767b8;
+    position: relative;
+}
+.cubb:hover {
+    transform: translate(1rem 1rem );
+}
+.cyb {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
     padding: 2rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, transparent 0%, transparent 30%, #000 110%, #000 110%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -433,11 +521,18 @@ body {
     letter-spacing: 0;
     margin: 0;
 }
+.cub1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
 .cubb {
     background-image: url(img/bankomat-770x482-cc6.jpg);
+    background-repeat: no-repeat;
 }
 .cub {
     background-image: url(img/scale_1200_1.jpeg);
+    background-repeat: no-repeat;
 }
 .result1 button{
     width: 35rem;
@@ -448,13 +543,16 @@ body {
     font-size:1rem ;
     box-shadow: 3px 3px 10px #3767b8;
 }
+.result1 button:hover{
+    background-color: #2756a8;
+    cursor: pointer;
+}
 .billion {
     width: 100%;
     height: 100rem;
     display: grid;
     justify-content: center;
     background-color: #fff;
-    text-align: center;
 }
 .billion1 {
     width: 72.5rem;
@@ -494,6 +592,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: box-shadow .5s;
+
+}
+.billion31:hover {
+    box-shadow: 1px 1px 25px 15px #5353536c;
 }
 .billion31 h1{
     font-size: 1.5rem;
@@ -506,16 +609,24 @@ body {
     background-color: #3767b8;
     color: #fff;
     margin-bottom: 2rem;
+    cursor: pointer;
+
+}
+div.billion31 img{
+    width: 260px;
+    height: 350px;
 }
 .team {
-    height: 60rem;
     width: 100%;
     display: grid;
     justify-items: center;
+    letter-spacing: 0;
 }
 .team1 {
     width: 72.5rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 } 
 .team1 h1, .team1 p{
     text-align: center;
@@ -531,9 +642,9 @@ body {
 }
 .price {
     width: 100%;
-    height: 57rem;
     display: grid;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 .price1 {
     width: 72.5rem;
@@ -579,6 +690,11 @@ body {
     border: none;
     background-color: #3767b8;
     color: #f5f5f5;
+    transition: background-color .3s;
+}
+.pricecub1 button:hover{
+    background-color: #2756a8;
+    cursor: pointer;
 }
 .quizWin {
     width: 100%;
@@ -613,11 +729,13 @@ body {
     font-weight: 600;
     font-size: 1rem;
 }
+.quizWin22 button:hover{
+    background-color: #ffffff9f;
+    cursor: pointer;
+}
 .reviews {
     width: 100%;
-    height: 60rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -634,7 +752,7 @@ body {
 }
 .reviews11 {
     width: 100%;
-    height: 45rem;
+    height: auto;
 }
 .reviews1 button{
     width: 20rem;
@@ -676,6 +794,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.back-number {
+    position: absolute;
+    font-size: 16rem;
+    opacity: 0.1;
+    font-weight: 800;
+    color: #4646465e;
 }
 .facts1 h1{
     font-size: 1.3rem;
@@ -793,6 +920,9 @@ body {
     border: none;
     color: #fff;
     font-size: 1rem;
+}
+.formaaa1 {
+    cursor: pointer;
 }
 .reshai {
     width: 100%;
@@ -927,7 +1057,7 @@ body {
     font-weight: 400;
 }
 .contact2 {
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -935,6 +1065,1159 @@ body {
 }
 .contact21 {
     width: 90%;
-    height: 80%;
+    height: 90%;
     border: 3px solid #ffffff79;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and ( min-width: 1450px ) and (max-width: 1920px) {
+    .blue-setka {
+        position: relative;
+        left: 47rem;
+    }
+}
+@media screen and ( min-width: 1000px ) and (max-width: 1449px) {
+    .blue-setka {
+        position: relative;
+        left: 30rem;
+    }
+}
+@media screen and ( min-width: 1025px ) and (max-width: 1300px) {
+    html {
+        font-size: 14px;
+    }
+    .firstWin{
+    justify-items: center;
+    height: 45rem;
+    }
+    .firstWin1{
+        width: 90%;
+    }
+    .firstWin1Right{
+        background-position-y: -7rem;
+        height: 100%;
+    }
+    .firstWin1Left {
+        height: 100%;
+    }
+    .kupon {
+        bottom: 0;
+        height: auto;
+    }
+    .kupon1 {
+        width: 80rem;
+        height: 17rem;
+    }
+    .firstWin1LeftDown p {
+        margin-left: 1rem;
+    }
+    .newLife1 {
+        height: 50rem;
+    }
+    .newLifeText {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .nltBlue {
+        width: 90%;
+        height: auto;
+    }
+    .spishemDolg {
+        height: 30rem;
+    }
+    .result {
+        margin-bottom: 2rem;
+    }
+    .result1 {
+        width: 80rem;
+    }
+    .result2 {
+        height: 45rem;
+    }
+    .result21 {
+        justify-content: center;
+    }
+    .cub {
+        margin-top: 2rem;
+    }
+    .cubb {
+        margin-bottom: 2rem;
+    }
+    .billion1 {
+        text-align: center;
+        width: 80rem;
+    }
+    .team1 {
+        width: 80rem;
+    }
+    .team1 p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+        margin: 0 0 1rem;
+    }
+    .team-slider {
+        overflow-x: scroll;
+    }
+    div.team-slider-win {
+        margin-top: 2rem;
+        width: 120%;
+    }
+    .price1 {
+        width: 80rem;
+    }
+    .pricecub1 {
+        height: calc(22rem - 4rem);
+    }
+    .pricecub1 h1 {
+        font-size: 1.5rem;
+    }
+    .quizWin1 {
+        width: calc(80rem - 4rem);
+    }
+    .reviews1 {
+        width: 80rem;
+    }
+    .us1 {
+        width: 80rem;
+    }
+    .facts {
+        justify-content: space-around;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    .formOsnov1 {
+        width: 80rem;
+    }
+    .star1 {
+        margin-bottom: 2rem;
+    }
+    .reshai3 {
+        width: 80rem;
+    }
+    .reshai11 {
+        height: 25rem;
+    }
+    .reshai111 {
+        height: calc(7rem - 2rem);
+        width: calc(60% - 2rem);
+    }
+    .reshai111 p{
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .kypon1 {
+        width: 80rem;
+    }
+    .kyponform h1 {
+        letter-spacing: 0.3rem;
+    }
+    .contact1 {
+        width: 80rem;
+    }
+    .contact21 iframe{
+        height: 90%;
+    }
+}
+@media screen and ( min-width: 901px ) and (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+    .firstWin{
+        justify-items: center;
+        height: 45rem;
+    }
+    .firstWin1{
+        width: 90%;
+    }
+        .firstWin1Right{
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .firstWin1Left {
+        height: 100%;
+    }
+    .kupon {
+        bottom: 0;
+        height: auto;
+    }
+    .kupon1 {
+        width: 80rem;
+        height: 17rem;
+    }
+    .firstWin1LeftDown p {
+        margin-left: 1rem;
+    }
+    .newLife1 {
+        height: 50rem;
+    }
+    .newLifeText {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .nltBlue {
+        width: 90%;
+        height: auto;
+    }
+    .spishemDolg {
+        height: 30rem;
+    }
+    .result {
+        margin-bottom: 2rem;
+    }
+    .result1 {
+        width: 80rem;
+    }
+    .result2 {
+        height: 45rem;
+    }
+    .result21 {
+        justify-content: center;
+    }
+    .cub {
+        margin-top: 2rem;
+    }
+    .cubb {
+        margin-bottom: 2rem;
+    }
+    .billion {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .billion1 {
+        text-align: center;
+        width: 80rem;
+    }
+    .billion3{
+        justify-content: center;
+    }
+    .billion31 {
+        width: 23%;
+        margin-right: 1rem;
+    }
+    div.billion31 img{
+        width: 16rem;
+        height: 80%;        
+    }
+    .billion31 button {
+        margin-top: 1rem;
+    }
+    .team1 {
+        width: 80rem;
+    }
+    .team1 p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+        margin: 0 0 1rem;
+    }
+    .team-slider {
+        overflow-x: scroll;
+    }
+    div.team-slider-win {
+        margin-top: 2rem;
+        width: 120%;
+    }
+    .price1 {
+        width: 80rem;
+    }
+    .pricecub1 {
+        height: calc(22rem - 4rem);
+    }
+    .pricecub1 h1 {
+        font-size: 1.5rem;
+    }
+    .quizWin1 {
+        width: calc(80rem - 4rem);
+    }
+    .reviews1 {
+        width: 80rem;
+    }
+    .us1 {
+        width: 80rem;
+    }
+    .facts {
+        justify-content: space-around;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    .formOsnov1 {
+        width: 80rem;
+    }
+    .star1 {
+        margin-bottom: 2rem;
+    }
+    .reshai3 {
+        width: 80rem;
+    }
+    .reshai11 {
+        height: 25rem;
+    }
+    .reshai111 {
+        height: calc(7rem - 2rem);
+    }
+    .reshai111 p{
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .kypon1 {
+            width: 80rem;
+    }
+    .kyponform h1 {
+        letter-spacing: 0.3rem;
+    }
+    .contact1 {
+        width: 80rem;
+    }
+    .contact21 {
+        display: block;
+    }
+    .contact21 iframe{
+        height: 90%;
+        width: 90%;
+        padding: 2rem;
+    }
+    .newLifeImgg {
+        height: 40rem;
+        margin-top: 3rem;
+    }
+}
+@media screen and ( min-width: 701px ) and (max-width: 900px) {
+    html {
+        font-size: 11px;
+    }
+    .header {
+        display: none;
+    }
+    .header900 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .header901 {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+    .header901 button{
+        position: fixed;    
+        z-index: 99;
+        right: 3rem;  
+    }
+    .header901 p{
+        width: 30%;
+        font-size: 2rem;
+        margin: 0 0 0 7rem;
+    }
+    .firstWin {
+        height: 100rem;
+    }
+    .firstWin1 {
+        width: 60rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .firstWin1Left {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .firstWin1LeftUp {
+        font-size: 3.5rem;
+        display: grid;
+        justify-items: center;
+    }
+    .firstWin1LeftUp p {
+        margin-bottom: 0;
+        width: 70%;
+        line-height: 6rem;
+    }
+    .pfirs {
+        font-size: 1.5rem;
+    }
+    .icon {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstWin1Right  {
+        width: 60%;
+        background-position-y: -7rem;
+    }
+    .firstWin1RightP {
+        width: 40rem;
+        height: 7rem;
+        font-size: 1.9rem;
+        left: -20rem;
+    }
+    .setka {
+        height: 108rem;
+    }
+    .setka1 {
+        top: -10rem;
+        left: -45rem;
+    }
+    .kupon1 {
+        width: 60rem;
+    }
+    .kupon {
+        bottom: 3rem;
+        height: 30rem;
+    }
+    .form form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .postp, .postpp {
+        width: 60%;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+    .postpp {
+        width: 64%;
+    }
+    .newLife {
+        display: none;
+    }
+    .newLife900 {
+        display: grid;
+        height: 95rem;
+    }
+    .newLife1 {
+        width: 60rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .newLifeText{
+        height: 25rem;
+        width: 80%;
+        text-align: center;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    .nlt1 {
+        font-size: 3.4rem;
+    }
+    .newLifeImg {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nlt4 {
+        align-items: center;
+    }
+    .nltBlue {
+        width: 75%;
+    }
+    .frm {
+        width: 40rem;
+        height: 8rem;
+        font-weight: 800;
+        box-shadow: 1px 1px 10px 1px #2756a8;
+    }
+    .spishemDolg {
+        height: 55rem;
+    }
+    .spishemDolg11 {
+        width: 60rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: normal;
+    }
+    .spishemDolg1 {
+        width: 80%;
+        align-items: center;
+    }
+    .spishemDolg1 p {
+        width: 80%;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .spishemDolg2 {
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .spishemDolgItem {
+        width: 25rem;
+    }
+    .nechaev {
+        height: 90rem;
+        letter-spacing: 0.2rem;
+    }
+    .nechaev2 {
+        text-align: center;
+        width: 100%;
+    }
+    .nechaev21 h1 {
+        font-size: 2rem;
+    }
+    .nechaev22 {
+        letter-spacing: 0;
+        width: 100%;
+        align-items: center;
+    }
+    .nechaev22 p{
+        width: 80%;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .nechaev41 {
+        width: 60rem;
+        flex-direction: column-reverse;
+    }
+    .nechaev111 {
+        width: 36rem;
+        height: 36rem;
+    }
+    .result {
+        height: 68rem;
+    }
+    .result1 {
+        width: 60rem;
+    }
+    .result2  {
+        height: 40rem;
+    }
+    .cubik {
+        height: calc(50% - 4rem);
+    }
+    .cubb {
+        margin-bottom: 2rem;
+    }
+    .cub {
+        margin-top: 2rem;
+    }
+    .result1 button {
+        height: 8rem;
+        width: 40rem;
+        font-size: 1.2rem;
+    }
+    .billion {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .billion1 {
+        width: 60rem;
+    }
+    .billion1 p {
+        text-align: center;
+    }
+    .billion228 {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .billion3 {
+        width: 370%;
+        height: 56rem;
+    }
+    .billion31 {
+        width: 25rem;
+        height: 55rem;
+    }
+    div.billion31 img {
+        width: 100%;
+        height: 450px;
+    }
+    .billion31 button {
+        width: 15rem;
+        height: 4rem;
+    }
+    .billion31 h1{
+        font-size: 2rem;
+    }
+    .team1 {
+        width: 60rem;
+    }
+    .team1 p {
+        font-size: 2rem;
+    }
+    .price1 {
+        width: 60rem;
+    }
+    .pricecub {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricecub1  {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .pricecub1 h1 {
+        font-size: 2rem;
+    }
+    .pricecub1 button {
+        width: 13rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .quizWin {
+        height: 25rem;
+    }
+    .quizWin1 {
+        width: calc(60rem - 4rem);
+    }
+    .quizWin2 {
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .reviews {
+        justify-content: space-around;
+    }
+    .reviews1 {
+        width: 60rem;
+    }
+    .reviews1 h1 {
+        font-size: 3rem;
+    }
+    .review-text {
+        font-size: 1.5rem;
+    }
+    div.reviews-slider {
+        height: 45rem;
+    }
+    .us {
+        height: 60rem;
+    }
+    .us1 {
+        width: 60rem;
+    }
+    .facts {
+        height: 50rem;
+    }
+    .facts1  {
+        width: 40%;
+        height: auto;
+    }
+    .formaOsnov {
+        height: 65rem;
+    }
+    .formOsnov1 {
+        width: 60rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formao{
+        width: 60rem;
+    }
+    .formaOsnov11 {
+        height: 50%;
+    }
+    .formaOsnov11 p{
+    font-size: 1.4rem;
+    }
+    .star {
+        justify-content: space-between;
+    }
+    .formaOsnov2111 p {
+        font-size: 1rem;
+    }
+    .reshai {
+        height: 110rem;
+    }
+    .reshai3 {
+        width: 60rem;
+        flex-direction: column;
+    }
+    .reshai1 {
+        text-align: center;
+    }
+    .reshai11 {
+        align-items: center;
+        height: auto;
+    }
+    .reshai111 {
+        height: calc(8rem - 2rem);
+        margin-bottom: 2rem;
+        text-align: left;
+
+    }
+    .reshai111 p{
+        width: 80%;
+    }
+    .kypon {
+        height: auto;
+    }
+    .kypon1 {
+        width: 60rem;
+    }
+    .kyponform form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact {
+        height: 85rem;
+    }
+    .contact1 {
+        width: 60rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact1 h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .contact2 {
+        width: 100%;
+    }
+    .contact21 iframe{
+        height: 90%;
+        width: 600px;
+    }
+    div.primer, div.primer2, div.primer3, div.primer4, div.primer5, div.primer6, div.primer7, div.primer8 {
+        width: 100vw;
+    }
+}
+@media screen and ( min-width: 501px ) and (max-width: 700px) {
+    html {
+        font-size: 9px;
+    }
+    .header {
+        display: none;
+    }
+    .header900 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .header901 {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+    .header901 button{
+        position: fixed;    
+        z-index: 99;
+        right: 3rem;  
+    }
+    .header901 p{
+        width: 30%;
+        font-size: 2rem;
+        margin: 0 0 0 7rem;
+    }
+    .firstWin {
+        height: 100rem;
+    }
+    .firstWin1 {
+        width: 70rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .firstWin1Left {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .firstWin1LeftUp {
+        font-size: 3.5rem;
+        display: grid;
+        justify-items: center;
+    }
+    .firstWin1LeftUp p {
+        margin-bottom: 0;
+        width: 70%;
+        line-height: 6rem;
+    }
+    .pfirs {
+        font-size: 1.5rem;
+    }
+    .icon {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstWin1Right  {
+        width: 60%;
+        background-size: 70rem;
+        background-position-y: -5rem;
+    }
+    .firstWin1RightP {
+        width: 40rem;
+        height: 7rem;
+        font-size: 1.9rem;
+        left: -20rem;
+    }
+    .setka {
+        height: 108rem;
+    }
+    .setka1 {
+        top: -10rem;
+        left: -45rem;
+    }
+    .kupon1 {
+        width: 70rem;
+    }
+    .kupon {
+        bottom: 3rem;
+        height: 30rem;
+    }
+    .form form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .postp, .postpp {
+        width: 60%;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+    .postpp {
+        width: 64%;
+    }
+    .newLife {
+        display: none;
+    }
+    .newLife900 {
+        display: grid;
+    }
+    .newLife1 {
+        width: 70rem;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forma {
+        margin-top: 4rem;
+    }
+    .newLifeText{
+        height: 25rem;
+        width: 80%;
+        text-align: center;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    .nlt1 {
+        font-size: 3.4rem;
+    }
+    .newLifeImg {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nlt4 {
+        align-items: center;
+    }
+    .nltBlue {
+        width: 75%;
+    }
+    .frm {
+        width: 40rem;
+        height: 8rem;
+        font-weight: 800;
+        box-shadow: 1px 1px 10px 1px #2756a8;
+    }
+    .spishemDolg {
+        height: 55rem;
+    }
+    .spishemDolg11 {
+        width: 70rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: normal;
+    }
+    .spishemDolg1 {
+        width: 80%;
+        align-items: center;
+    }
+    .spishemDolg1 p {
+        width: 80%;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .spishemDolg2 {
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .spishemDolgItem {
+        width: 25rem;
+    }
+    .nechaev {
+        height: 100rem;
+        letter-spacing: 0.2rem;
+    }
+    .nechaev2 {
+        text-align: center;
+        width: 100%;
+    }
+    .nechaev21 h1 {
+        font-size: 2rem;
+    }
+    .nechaev22 {
+        letter-spacing: 0;
+        width: 100%;
+        align-items: center;
+    }
+    .nechaev22 p{
+        width: 80%;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .nechaev41 {
+        width: 70rem;
+        flex-direction: column-reverse;
+    }
+    .nechaev111 {
+        width: 36rem;
+        height: 36rem;
+    }
+    .result {
+        height: 68rem;
+    }
+    .result1 {
+        width: 70rem;
+    }
+    .result2  {
+        height: 40rem;
+    }
+    .cubik {
+        height: calc(50% - 4rem);
+    }
+    .cubb {
+        margin-bottom: 2rem;
+    }
+    .cub {
+        margin-top: 2rem;
+    }
+    .result1 button {
+        height: 8rem;
+        width: 40rem;
+        font-size: 1.2rem;
+    }
+    .billion {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .billion1 {
+        width: 70rem;
+    }
+    .billion1 p {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .billion228 {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .billion3 {
+        width: 370%;
+        height: 56rem;
+    }
+    .billion31 {
+        width: 25rem;
+        height: 55rem;
+    }
+    div.billion31 img {
+        width: 100%;
+        height: 450px;
+    }
+    .billion31 button {
+        width: 15rem;
+        height: 4rem;
+    }
+    .billion31 h1{
+        font-size: 2rem;
+    }
+    .team1 {
+        width: 70rem;
+    }
+    .team1 p {
+        font-size: 2rem;
+    }
+    .price1 {
+        width: 70rem;
+    }
+    .pricecub {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricecub1  {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .pricecub1 h1 {
+        font-size: 2rem;
+    }
+    .pricecub1 button {
+        width: 13rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .quizWin {
+        height: 40rem;
+    }
+    .quizWin1 {
+        width: calc(60rem - 4rem);
+    }
+    .quizWin2 {
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .quizWin21 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .quizWin22 button {
+        width: 30rem;
+        height: 7rem;
+    }
+    .reviews {
+        justify-content: space-around;
+    }
+    .reviews1 {
+        width: 70rem;
+    }
+    .reviews1 h1 {
+        font-size: 3rem;
+    }
+    .review-text {
+        font-size: 1.5rem;
+    }
+    div.reviews-slider {
+        height: 45rem;
+    }
+    .us {
+        height: 60rem;
+    }
+    .us1 {
+        width: 70rem;
+    }
+    .facts {
+        height: 50rem;
+    }
+    .facts1  {
+        width: 40%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        height: auto;
+    }
+    .facts1 h1 {
+        font-size: 2rem;
+    }
+    .formaOsnov {
+        height: 65rem;
+    }
+    .formOsnov1 {
+        width: 70rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formao{
+        width: 70rem;
+    }
+    .formaOsnov11 {
+        height: 50%;
+    }
+    .formaOsnov11 p{
+    font-size: 1.4rem;
+    }
+    .star {
+        justify-content: space-between;
+    }
+    .formaOsnov2111 p {
+        font-size: 1rem;
+    }
+    .reshai {
+        height: 110rem;
+    }
+    .reshai3 {
+        width: 70rem;
+        flex-direction: column;
+    }
+    .reshai1 {
+        text-align: center;
+    }
+    .reshai11 {
+        align-items: center;
+        height: auto;
+    }
+    .reshai111 {
+        height: calc(8rem - 2rem);
+        margin-bottom: 2rem;
+        text-align: left;
+
+    }
+    .reshai111 p{
+        width: 80%;
+    }
+    .kypon {
+        height: auto;
+    }
+    .kypon1 {
+        width: 70rem;
+    }
+    .kyponform form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact {
+        height: 85rem;
+    }
+    .contact1 {
+        width: 70rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact1 h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .contact2 {
+        width: 100%;
+    }
+    .contact21 iframe{
+        height: 90%;
+        width: 500px;
+    }
+    div.primer, div.primer2, div.primer3, div.primer4, div.primer5, div.primer6, div.primer7, div.primer8 {
+        width: 100vw;
+    }
+    .team-slider {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    div.team-slider-win {
+        width: 140%;
+    }
+    .price1 h1{
+        font-size: 3.5rem;
+    }
+    .price1 p {
+        font-size: 2rem;
+    }
+    .pricecub1 {
+        height: auto;
+    }
 }
