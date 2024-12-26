@@ -1788,7 +1788,7 @@ div.billion31 img{
 }
 @media screen and ( min-width: 501px ) and (max-width: 700px) {
     html {
-        font-size: 9px;
+        font-size: 8px;
     }
     .header {
         display: none;
@@ -1812,16 +1812,15 @@ div.billion31 img{
         right: 3rem;  
     }
     .header901 p{
-        width: 30%;
+        width: 50%;
         font-size: 2rem;
-        margin: 0 0 0 7rem;
     }
     .firstWin {
         height: 100rem;
     }
     .firstWin1 {
-        width: 70rem;
-        height: auto;
+    width : 100%;        
+    height: auto;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -1855,7 +1854,11 @@ div.billion31 img{
     .firstWin1Right  {
         width: 60%;
         background-size: 70rem;
-        background-position-y: -5rem;
+        background-position-y: 2rem;
+        background-repeat: no-repeat;
+    }
+    div.review-text {
+        width: 90%;
     }
     .firstWin1RightP {
         width: 40rem;
@@ -1871,11 +1874,11 @@ div.billion31 img{
         left: -45rem;
     }
     .kupon1 {
-        width: 70rem;
+        width : 60rem;    
     }
     .kupon {
         bottom: 3rem;
-        height: 30rem;
+        height: auto;
     }
     .form form{
         width: 100%;
@@ -1884,12 +1887,12 @@ div.billion31 img{
         align-items: center;
     }
     .postp, .postpp {
-        width: 60%;
-        height: 4rem;
+        width: 80%;
+        height: 6rem;
         margin-bottom: 2rem;
     }
     .postpp {
-        width: 64%;
+        width: 84%;
     }
     .newLife {
         display: none;
@@ -1898,7 +1901,7 @@ div.billion31 img{
         display: grid;
     }
     .newLife1 {
-        width: 70rem;
+        width : 100%;
         height: auto;
         flex-direction: column;
         align-items: center;
@@ -1936,8 +1939,7 @@ div.billion31 img{
         height: 55rem;
     }
     .spishemDolg11 {
-        width: 70rem;
-        flex-direction: column;
+width : 100%;        flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: normal;
@@ -1981,8 +1983,7 @@ div.billion31 img{
         font-weight: 300;
     }
     .nechaev41 {
-        width: 70rem;
-        flex-direction: column-reverse;
+width : 100%;        flex-direction: column-reverse;
     }
     .nechaev111 {
         width: 36rem;
@@ -1992,8 +1993,7 @@ div.billion31 img{
         height: 68rem;
     }
     .result1 {
-        width: 70rem;
-    }
+width : 100%;    }
     .result2  {
         height: 40rem;
     }
@@ -2016,8 +2016,7 @@ div.billion31 img{
         padding-bottom: 2rem;
     }
     .billion1 {
-        width: 70rem;
-    }
+width : 100%;    }
     .billion1 p {
         text-align: center;
         font-size: 2rem;
@@ -2047,14 +2046,12 @@ div.billion31 img{
         font-size: 2rem;
     }
     .team1 {
-        width: 70rem;
-    }
+width : 100%;    }
     .team1 p {
         font-size: 2rem;
     }
     .price1 {
-        width: 70rem;
-    }
+width : 100%;    }
     .pricecub {
         flex-direction: column;
         align-items: center;
@@ -2095,8 +2092,7 @@ div.billion31 img{
         justify-content: space-around;
     }
     .reviews1 {
-        width: 70rem;
-    }
+width : 100%;    }
     .reviews1 h1 {
         font-size: 3rem;
     }
@@ -2107,19 +2103,24 @@ div.billion31 img{
         height: 45rem;
     }
     .us {
-        height: 60rem;
+        height: auto;
+        padding-bottom: 4rem;
     }
     .us1 {
-        width: 70rem;
-    }
+width : 100%;    }
     .facts {
-        height: 50rem;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        text-align: center;
     }
     .facts1  {
-        width: 40%;
+        width: 60%;
         font-size: 1.5rem;
         line-height: 2rem;
         height: auto;
+        margin-bottom: 4rem;
     }
     .facts1 h1 {
         font-size: 2rem;
@@ -2128,13 +2129,11 @@ div.billion31 img{
         height: 65rem;
     }
     .formOsnov1 {
-        width: 70rem;
-        flex-direction: column;
+width : 100%;        flex-direction: column;
         align-items: center;
     }
     .formao{
-        width: 70rem;
-    }
+width : 100%;    }
     .formaOsnov11 {
         height: 50%;
     }
@@ -2151,8 +2150,7 @@ div.billion31 img{
         height: 110rem;
     }
     .reshai3 {
-        width: 70rem;
-        flex-direction: column;
+width : 100%;        flex-direction: column;
     }
     .reshai1 {
         text-align: center;
@@ -2171,23 +2169,26 @@ div.billion31 img{
         width: 80%;
     }
     .kypon {
-        height: auto;
+        height: 50rem;
     }
     .kypon1 {
-        width: 70rem;
-    }
+        width : 60rem;    
+    }  
     .kyponform form {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+    .kyponform h1{
+        font-size: 3rem;
+        text-align: center;
+    }
     .contact {
         height: 85rem;
     }
     .contact1 {
-        width: 70rem;
-        flex-direction: column;
+width : 100%;        flex-direction: column;
         align-items: center;
     }
     .contact1 h2{
@@ -2199,7 +2200,7 @@ div.billion31 img{
     }
     .contact21 iframe{
         height: 90%;
-        width: 500px;
+        width: 400px;
     }
     div.primer, div.primer2, div.primer3, div.primer4, div.primer5, div.primer6, div.primer7, div.primer8 {
         width: 100vw;
@@ -2209,7 +2210,7 @@ div.billion31 img{
         flex-wrap: nowrap;
     }
     div.team-slider-win {
-        width: 140%;
+        width: 160%;
     }
     .price1 h1{
         font-size: 3.5rem;
@@ -2217,7 +2218,550 @@ div.billion31 img{
     .price1 p {
         font-size: 2rem;
     }
+    .contact3 h1{
+        font-size: 2rem;
+    }
+    .contact3 p {
+        font-size: 1.7rem;
+    }
     .pricecub1 {
         height: auto;
+    }
+    .nechaev111 img {
+        width: 36rem;
+        height: 36rem;
+    }
+}
+@media screen and ( min-width: 320px ) and (max-width: 500px) {
+    html {
+        font-size: 8px;
+    }
+    .header {
+        display: none;
+    }
+    .leftLogo img{
+        width: 20rem;
+        height: 5rem;
+    }
+    .header900 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .header901 {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+    .header901 button{
+        position: fixed;    
+        z-index: 99;
+        right: 3rem;  
+    }
+    .header901 p{
+        width: 50%;
+        font-size: 2rem;
+    }
+    .firstWin {
+        height: 120rem;
+    }
+    .firstWin1 {
+    width : 100%;        
+    height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .firstWin1Left {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .firstWin1LeftUp {
+        font-size: 3.5rem;
+        display: grid;
+        justify-items: center;
+    }
+    .firstWin1LeftUp p {
+        margin-bottom: 0;
+        width: 70%;
+        line-height: 6rem;
+    }
+    .pfirs {
+        font-size: 1.5rem;
+    }
+    .icon {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstWin1Right  {
+        background-size: 60rem;
+        background-position-y: 6rem;
+        background-repeat: no-repeat;
+        background-position-x: left;
+    }
+    div.review-text {
+        width: 90%;
+    }
+    .firstWin1RightP {
+        width: 40rem;
+        height: 7rem;
+        font-size: 1.9rem;
+        left: -20rem;
+        top: 0;
+        left: 0;
+    }
+    .setka {
+        height: 108rem;
+    }
+    .setka1 {
+        top: -10rem;
+        left: -45rem;
+    }
+    .kupon1 {
+        width : 90%;    
+    }
+    .kupon {
+        bottom: 3rem;
+        height: auto;
+        justify-items: center;
+        text-align: center;
+    }
+    .formp {
+        text-align: center;
+    }
+    .form form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .postp, .postpp {
+        width: 80%;
+        height: 6rem;
+        margin-bottom: 2rem;
+    }
+    .postpp {
+        width: 84%;
+    }
+    .newLife {
+        display: none;
+    }
+    .newLife900 {
+        display: grid;
+    }
+    .newLife1 {
+        width : 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forma {
+        margin-top: 4rem;
+    }
+    .newLifeText{
+        height: 25rem;
+        width: 80%;
+        text-align: center;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    .nlt1 {
+        font-size: 3.4rem;
+    }
+    .newLifeImg {
+        height: auto;
+        margin-bottom: 2rem;
+        margin-bottom: 2rem;
+        display: grid;
+        justify-items: center;
+
+    }
+    .newLifeImgg {
+        width: 90%;
+    }
+    .nlt4 {
+        align-items: center;
+    }
+    .nltBlue {
+        width: 75%;
+        height: auto;
+    }
+    .nltBlue img{
+        width:10px ;
+        height: 10px;
+    }
+    .frm {
+        height: 8rem;
+        font-weight: 800;
+        box-shadow: 1px 1px 10px 1px #2756a8;
+    }
+    .spishemDolg {
+        height: auto;
+    }
+    .spishemDolg11 {
+width : 100%;        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: normal;
+    }
+    .spishemDolg1 {
+        width: 80%;
+        align-items: center;
+    }
+    .spishemDolg1 p {
+        width: 80%;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .spishemDolg2 {
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .spishemDolgItem {
+        width: 25rem;
+    }
+    .nechaev {
+        height: 90rem;
+        letter-spacing: 0.2rem;
+    }
+    .nechaev1 {
+        width: auto;
+    }
+    .nechaev2 {
+        text-align: center;
+        width: 100%;
+    }
+    .nechaev21 h1 {
+        font-size: 2rem;
+    }
+    .nechaev22 {
+        letter-spacing: 0;
+        width: 100%;
+        align-items: center;
+    }
+    .nechaev22 p{
+        width: 80%;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .nechaev41 {
+width : 100%;        flex-direction: column-reverse;
+    }
+    .nechaev111 {
+        width: 26rem;
+        height: 26rem;
+    }
+    .result {
+        height: auto;
+    }
+    .result1 {
+width : 100%;    }
+    .result2  {
+        height: auto;
+        flex-direction: column;
+    }
+    .result21 {
+        width: 100%;
+        height: 50rem;
+        margin-bottom: 2rem;
+    }
+    .cubik {
+        height: calc(50% - 4rem);
+    }
+    .cubb {
+        margin-bottom: 2rem;
+    }
+    .cub {
+        margin-top: 2rem;
+    }
+    .result1 button {
+        height: 8rem;
+        font-size: 1.2rem;
+    }
+    .billion {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .billion1 {
+width : 100%;    }
+    .billion1 p {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .billion228 {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .billion3 {
+        width: 800%;
+        height: 76rem;
+    }
+    .billion31 {
+        width: 35rem;
+        height: 75rem;
+    }
+    div.billion31 img {
+        width: 100%;
+        height: 450px;
+    }
+    .billion31 button {
+        width: 15rem;
+        height: 4rem;
+    }
+    .billion31 h1{
+        font-size: 2rem;
+    }
+    .team1 {
+        width : 90%;
+    }
+    .team1 p {
+        font-size: 2rem;
+    }
+    .price1 {
+width : 100%;    }
+    .pricecub {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricecub1  {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .pricecub1 h1 {
+        font-size: 2rem;
+    }
+    .pricecub1 button {
+        width: 13rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .quizWin {
+        height: 40rem;
+        justify-items: center;
+    }
+    .quizWin1 {
+        width: calc(90% - 4rem);
+    }
+    .quizWin2 {
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .quizWin21 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .quizWin22 button {
+        width: 30rem;
+        height: 7rem;
+    }
+    .reviews {
+        justify-content: space-around;
+    }
+    .reviews1 {
+width : 100%;    }
+    .reviews1 h1 {
+        font-size: 3rem;
+    }
+    .review-text {
+        font-size: 1.5rem;
+    }
+    div.reviews-slider {
+        height: 55rem;
+    }
+    .us {
+        height: auto;
+        padding-bottom: 4rem;
+    }
+    .us1 {
+width : 100%;    }
+    .facts {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .facts1  {
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    .facts1 h1 {
+        font-size: 2rem;
+    }
+    .formaOsnov {
+        height: 65rem;
+    }
+    .formOsnov1 {
+width : 100%;        flex-direction: column;
+        align-items: center;
+    }
+    .formao{
+width : 100%;    }
+    .formaOsnov11 {
+        height: 50%;
+    }
+    .formaOsnov11 p{
+    font-size: 1.4rem;
+    }
+    .star {
+        justify-content: space-between;
+    }
+    .formaOsnov2111 p {
+        font-size: 1rem;
+    }
+    .reshai {
+        height: 110rem;
+    }
+    .reshai3 {
+width : 100%;        flex-direction: column;
+    }
+    .reshai1 {
+        text-align: center;
+    }
+    .reshai11 {
+        align-items: center;
+        height: auto;
+    }
+    .reshai111 {
+        height:95%;
+        width: calc(100% - 2rem);
+        margin-bottom: 2rem;
+        background-image: none;
+        background-color: #3767b8;
+        text-align: left;
+
+    }
+    .reshai2 {
+        width: 95%;
+    }
+    .reshai111 p{
+        width: 80%;
+    }
+    .kypon {
+        height: 50rem;
+    }
+    .kypon1 {
+        width : 100%;    
+    }  
+    .kyponform form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .kyponform h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .contact {
+        height: 85rem;
+    }
+    .contact1 {
+width : 100%;        flex-direction: column;
+        align-items: center;
+    }
+    .contact1 h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .contact2 {
+        width: 100%;
+    }
+    .contact21 iframe{
+        height: 90%;
+        width: 250px;
+    }
+    div.primer, div.primer2, div.primer3, div.primer4, div.primer5, div.primer6, div.primer7, div.primer8 {
+        width: 100vw;
+    }
+    .team-slider {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    div.team-slider-win {
+        width: 500%;
+    }
+    div.team-slide2 {
+        font-size: 2.5rem;
+    }
+    div.team-slide3 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .price1 h1{
+        font-size: 3rem;
+    }
+    .price1 p {
+        font-size: 2rem;
+    }
+    .contact3 h1{
+        font-size: 2rem;
+    }
+    .contact3 p {
+        font-size: 1.7rem;
+    }
+    .pricecub1 {
+        height: auto;
+    }
+    .nechaev111 img {
+        width: 26rem;
+        height: 26rem;
+    }
+    .nechaev11 {
+        height: auto;
+    }
+    .cubb h1, .cub h1 {
+        font-size: 2.5rem;
+    }
+    .cubb p, .cub p {
+        font-size: 1.5rem;
+    }
+    .cubik h1 {
+        font-size: 2.5rem;
+    }
+    .cubik p{
+        font-size: 1.5rem;
+    }
+    div.team-slide {
+        width: 32rem;
+        height: 64rem;
+    }
+    div.right.active {
+        width: 65%;
+    }
+    div.formaOsnov21 {
+        width: 90%;
+        height: 90%;
+    }
+    .formaaa, .formaaa1 {
+        height: 4rem;
+        margin-bottom: 1rem;
+    }
+    .contact12  {
+        width: 90%;
+    }
+    .contact3 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .contact3 h1{
+        text-align: center;
     }
 }
