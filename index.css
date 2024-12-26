@@ -54,12 +54,13 @@ body {
     font-weight: 600;
     color: #000;
 }
-.rightLogo {
+.rightLoggo {
     width: 31rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.rightLogo p{
+.rightLoggo p{
     padding:0 2rem 0 0 ;
 }
 .button1 {
@@ -944,7 +945,7 @@ div.billion31 img{
     color: #3767b8;
 }
 .reshai1 p{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .reshai11 {
