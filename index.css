@@ -20,7 +20,6 @@ body {
     position: absolute;
     transform: rotate(315deg);
     left: -20rem;
-    bottom: -40rem;
 }
 .blue-setka {
     width: auto;
@@ -37,7 +36,16 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 40;
+    z-index: 990;
+}
+.head {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
 }
 .header900 {
     display: none;
@@ -63,10 +71,14 @@ body {
 .rightLoggo p{
     padding:0 2rem 0 0 ;
 }
+.rightLoggo a{
+    text-decoration: none;
+    color: #000;
+}
 .button1 {
     width: 12.5rem;
     border: none;
-    background-color: #fff;
+    background-color: #3767b8;
     font-size: 1rem;
     font-family: "Ubuntu";
     font-weight: 600;
@@ -237,7 +249,6 @@ body {
 .newLife900 {
     display: none;
     width: 100%;
-    display: grid;
     justify-content: center;
     z-index: 21;
     background-color: #f5f5f5;
@@ -2232,6 +2243,33 @@ width : 100%;        flex-direction: column;
         width: 36rem;
         height: 36rem;
     }
+    .primer-win {
+        flex-direction: column;
+        align-items: center;
+    }
+    .primer-photo img {
+        width: 100%;
+        height: 60%;
+    }
+    .primer-text1 {
+        width: 90%;
+        padding-left: 10%;
+        height: 50%;
+        font-weight: 500;
+    }
+    .primer-text1 h1{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .primer-text1 p{
+        font-size: 2rem;
+        margin: 1rem 0 0;
+    }
+
+    div.primer-win {
+        width: 90vw;
+        height: 80vh;
+    }
 }
 @media screen and ( min-width: 320px ) and (max-width: 500px) {
     html {
@@ -2765,4 +2803,32 @@ width : 100%;        flex-direction: column;
     .contact3 h1{
         text-align: center;
     }
+    .primer-win {
+        flex-direction: column;
+        align-items: center;
+    }
+    .primer-photo img {
+        width: 100%;
+        height: 60%;
+    }
+    .primer-text1 {
+        width: 90%;
+        padding-left: 5%;
+        height: 50%;
+        font-weight: 500;
+    }
+    .primer-text1 h1{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .primer-text1 p{
+        font-size: 2rem;
+        margin: 1rem 0 0;
+    }
+
+    div.primer-win {
+        width: 90vw;
+        height: 80vh;
+    }
+
 }

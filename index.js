@@ -2,6 +2,7 @@
 const openModalButtonIds = [
     "open-modal-btn",
     "open-modal",
+    "open-modall",
     "open-moda",
     "open-modw",
     "open-modS",
@@ -138,3 +139,20 @@ clsButt.addEventListener("click", () => {
     rightPopup.classList.remove("active");
     right.classList.remove("active");
 });
+///---------header
+
+const header = document.getElementById('head');
+const firstWin = document.getElementById('fiwstWIn');
+
+// Функция для проверки позиции
+function checkScroll() {
+    const firstWinRect = firstWin.getBoundingClientRect();
+    if (firstWinRect.top <= 0) {
+        header.style.position = 'fixed';
+    } else {
+        header.style.position = 'static'; // Возвращаем стиль, если прокрутка обратно
+    }
+}
+
+// Добавляем событие прокрутки
+window.addEventListener('scroll', checkScroll);

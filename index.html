@@ -222,13 +222,13 @@
                         <h1>Оставьте заявку</h1>
                         <p>Мы свяжемся с вами в ближайшее время</p>
                     </div>
-                    <form method="post" class="formw" >
+                    <form method="post" action="send.php" class="formw" >
                         <input type="text" name="input1" placeholder="Имя" class="formw2" >
                         <input type="tel" name="input2" placeholder="+7 (999) 999-99-99" class="formw2" >
                         <input type="text" name="input3" placeholder="Краткое описание проблемы" class="formw3" >
                         <input type="submit" value="ОТПРАВИТЬ" class="formw1" >
                     </form>
-                    <p class="politic" >Я согласен(на) с политикой конфиденциальности</p>
+                    <p class="politic" >Я согласен(на) с политикой конфиденциальности!!</p>
                 </div>
             </div>
         </div>
@@ -258,18 +258,20 @@
         <img src="img/_2.png" class="blue-setka" alt="">
     </div>
     <div class="header" id="head">
-        <div class="leftLogo" >
-            <img src="img/Group_4.png" style="max-width:200px; max-height: 200px; " alt="">
-        </div>
-        <div class="centerLogo">
-            <a href="" class="centerLogo1" >УСЛУГИ</a>
-            <a href="#show-btn2" class="centerLogo1" >РЕШЕНИЯ</a>
-            <a href="#scrollWin" class="centerLogo1" >КОМАНДА</a>
-            <a href="#contact" class="centerLogo1" >КОНТАКТЫ</a>
-        </div>
-        <div class="rightLoggo">
-            <p><b>+7 (495) 385-89-25</b></p>
-            <button class="button1" id="open-modal" >ОБРАТНЫЙ ЗВОНОК</button>
+        <div class="head">
+            <div class="leftLogo" >
+                <img src="img/Group_4.png" style="max-width:200px; max-height: 200px; " alt="">
+            </div>
+            <div class="centerLogo">
+                <a href="" class="centerLogo1" >УСЛУГИ</a>
+                <a href="#show-btn2" class="centerLogo1" >РЕШЕНИЯ</a>
+                <a href="#scrollWin" class="centerLogo1" >КОМАНДА</a>
+                <a href="#contact" class="centerLogo1" >КОНТАКТЫ</a>
+            </div>
+            <div class="rightLoggo">
+                <a href="tel:84953858925"><p><b>+7 (495) 385-89-25</b></p></a>
+                <button class="button1" id="open-modall" >ОБРАТНЫЙ ЗВОНОК</button>
+            </div>
         </div>
     </div>
     <div class="header900" id="head900">
@@ -286,7 +288,7 @@
             </button>
         </div>        
     </div>
-    <div class="firstWin">
+    <div class="firstWin" id="fiwstWIn" >
         <!--Отступы лево право-->
         <div class="firstWin1">
             <div class="firstWin1Left">
