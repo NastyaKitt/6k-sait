@@ -1,0 +1,102 @@
+.popup-head {
+    width: 1px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.popup-head.active{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.507);
+    transition: visibility .4s, opacity .4s ;
+
+}
+.right {
+    width: 35%;
+    background-color: #3767b8;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    transform: translateX(330px);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .4s, opacity .4s ;
+
+}
+.right.active {
+    width: 35%;
+    background-color: #3767b8;
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    transition: transform .8s, opacity .5s, visibility .5s;
+    transform: translateX(0);
+}
+
+.right1 {
+    height: 30%;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: space-evenly;
+}
+.right1 a{
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 2rem;
+}
+.rightLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.rightLogo a{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+.button1 {
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    background-color: #3767b8;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: "Ubuntu";
+    font-weight: 600;
+}
+.button1:hover {
+    background-color: #2155ad;
+    cursor: pointer;
+}
+
+.right-butt-cls {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 999;
+    border: none;
+}
+.right-butt-cls svg{
+    fill: #fff;
+}

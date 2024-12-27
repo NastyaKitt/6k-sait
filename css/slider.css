@@ -1,0 +1,114 @@
+.team-slider {
+    width: 100%;
+    height: 100%;
+    font-family: "Ubuntu", serif;
+}
+.team-slider-win {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-slide {
+    width: 16rem;
+    height: 32rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.team-slide1 img {
+    width: 100%;
+    height: 100%;
+}
+.team-slide2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+.team-slide3 {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    padding-top: 1rem;
+}
+.buttonLeft {
+    position: relative;
+    top: 10rem;
+    right: 10rem;
+}
+/* Новый слайдер*/
+.reviewsSlider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.reviews-slider {
+    width: 100%;
+    height: 35rem;
+}
+.review {
+    width: 0px;
+    transition: transform 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.review.active {
+    opacity: 1;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    visibility: visible;
+}
+.buttton {
+    width: 3rem;
+    height: 3rem;
+    background-color: #3767b8;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 2rem;
+}
+.buttton:hover {
+    background-color: #294980;
+    cursor: pointer;
+}
+.button-butt {
+    margin: 3rem 0;
+}
+.buttton:hover {
+    background-color: #294980;
+}
+.photo-logo {
+    width: 100%;
+    height: 50%;
+}
+.photo-logo1 {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100px;
+}
+
+.review-text {
+    width: 70%;
+    line-height: 2.4rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    
+}
+.reviews-age {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+.button-butt:hover {
+    transition: all .2s;
+    background-color: #294980;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.primer, .primer2, .primer3, .primer4, .primer5, .primer6, .primer7, .primer8 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 9999;
+}
+.primer.open, .primer2.open, .primer3.open, .primer4.open, .primer5.open, .primer6.open, .primer7.open, .primer8.open{
+    visibility: visible;
+    opacity: 1;
+    z-index: 9999999;
+    transition: all 1s;
+}
+.primer-win {
+    width: 80vw;
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.primer-photo img {
+    width: 30rem;
+    height: 100%;
+}
+.primer-text1 {
+    display: flex;
+    flex-direction: column;
+
+}
+.primer-text-p {
+    margin-bottom: 2rem;
+}
+.my-modal-close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+}
+.my-modal-close path{
+    fill: #fff;
+    transition: fill .4s;
+}
+.my-modal-close:hover path{
+    fill: #f5f5f5;
+}
